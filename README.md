@@ -8,7 +8,7 @@
 4. Classification has been performed using SVM with polynomial degree 7.
 5. Finally a JSON file has been created with all the results and implementation details for the purpose of total regeneration of the model.
 
-##### FINAL JSON OUTPUT
+##### FINAL JSON OUTPUT (use [JSON LINT](https://jsonlint.com/) for better visualization of the following JSON result)
 {
 	"svm-openml": {
 		"result": {
