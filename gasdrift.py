@@ -97,14 +97,14 @@ def test(X_test ,y_test,Pkl_Filename):
 
     # Matrices
     confusion_matrix = metrics.confusion_matrix(y_test, y_pred)
-    precision= metrics.precision_score(y_test, y_pred, average=None)
-    recall = metrics.recall_score(y_test, y_pred, average=None)
+    precision= metrics.precision_score(y_test, y_pred,average='weighted')
+    recall = metrics.recall_score(y_test, y_pred,average='weighted')
     print(precision, recall)
     print(confusion_matrix)
     confusion_matrix = confusion_matrix.tolist()
     report = {}
-    report["precision"]= list(precision)
-    report["recall"]= list(recall)
+    report["precision"]= precision
+    report["recall"]= recall
     report["confusion_matrix"] = confusion_matrix
     return report
 
